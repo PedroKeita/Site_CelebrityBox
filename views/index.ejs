@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelebrityBox</title>
+    <link rel= "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.ejs"> <img src="images/cele.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index">HOME</a></li>
+                    <li><a href="/about">SOBRE</a></li>
+                    <li><a href="/contact">CONTATO</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+     <div class="text-box">
+        <h1> Esse Site é Cinema</h1>
+        <p>Esse é o melhor site de cinema que você conhecerá hoje para o resto da vida</p>
+        <a href="" class="hero-btn">Faça seu login</a>
+     </div>
+    </section>
+
+
+    <!---campo-->
+<section class ="background">
+    <section class="campus">
+        <h1> Celebridades do Momento</h1>
+        <p> Aqui nessa seção você verá as celebridades mais populares da semana</p>
+    
+        <div class = "row">
+            <div class = "campus-col">
+                <img src ="images/ryangosling.jpg">
+                <div class="indice-nome">
+                    <h3>Ryan Gosling</h3>
+                </div>
+            </div>
+            <div class = "campus-col">
+                <img src ="images/mc-pipokinha-2.jpg">
+                <div class="indice-nome">
+                    <h3>MC Pipokinha</h3>
+                </div>
+            </div>
+            <div class = "campus-col">
+                <img src ="images/neymar.jpg">
+                <div class="indice-nome">
+                    <h3>Neymar Jr</h3>
+                </div>
+            </div>
+            <div class = "campus-col">
+                <img src ="images/zendaya.jpg">
+                <div class="indice-nome">
+                    <h3>Zendaya</h3>
+                </div>
+            </div>
+            
+        </div>
+        
+    
+    </section>
+</section>
+
+<!-----Frases do momento-->
+<section class="background2">
+    <section class ="frases">
+        <h1> Frases do Momento</h1>
+        <p>Aqui estão as frases mais comentadas das ultimas semanas</p>
+    
+        <div class="row">
+            <div class="frases-col">
+                <h3>Neymar</h3>
+                <p>
+                    "Não sei se vamos dar certo, mas HOJE você é a certeza que eu quero tentar"
+                </p>
+            </div>
+            
+            <div class="frases-col">
+                <h3>Scarlett Johansson</h3>
+                <p>
+                    "Eu acredito que a monogamia é uma instituição falida."
+                </p>
+            </div>
+            <div class="frases-col">
+                <h3>Ryan Gosling</h3>
+                <p>
+                    "I am Driver"
+                </p>
+            </div>
+        </div>
+    
+    
+    </section>
+</section>
+
+
+<!------O que temos-->
+<section class="oqtemos">
+    <h1>O que Temos a oferecer?</h1>
+    <p>Qual a finalidade desse site</p>
+
+    <div class="row">
+        <div class="oqtemos-col">
+            <img src="images/michaeeeee.jpg">
+            <h3>Interação</h3>
+            <p>O trabalho ideal do site é manter a interação entre a comunidade de celebridades do mundo inteiro</p>
+        </div>
+        <div class="oqtemos-col">
+            <img src="images/cinema2.jpg">
+            <h3>Novidades</h3>
+            <p>Deixar nosso publico completamente informado no que acontece no mundo dos famosos</p>
+        </div>
+        <div class="oqtemos-col">
+            <img src="images/godfather2.jpg">
+            <h3>Divulgação</h3>
+            <p>Também divulgamos as obras-primas que nossos famosos produzem</p>
+        </div>
+    </div>
+</section>
+
+
+<!----Footer-->
+
+<section class="footer">
+    <h4>Sobre Mim</h4>
+    <p>Sou do IFCE curso informática</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>
+        Feito por Pedro Lucas
+    </p>
+</section>
+
+
+
+
+
+<!-- Javascript butão menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

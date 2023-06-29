@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelebrityBox</title>
+    <link rel= "stylesheet" href="style.css">
+    <link rel= "stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body rel= "stylesheet" href="style.css">
+    <section class="sub-header">
+        <nav>
+            <a href="index.ejs"> <img src="images/cele.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index">HOME</a></li>
+                    <li><a href="/about">SOBRE</a></li>
+                    
+                    
+                    <li><a href="/contact">CONTATO</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>CONTATO</h1>
+        
+     
+    </section>
+
+    <!------sobre conteçao-->
+
+
+    <section rel= "stylesheet" href="contact.css">
+        <div class="container">
+          <span class="big-circle"></span>
+          
+          <div class="form">
+            <div class="contact-info">
+              <h3 class="title">Venha ajudar o meu site</h3>
+              <p class="text">
+                Mande algum contato para mim para que eu tenha ideias para implementar no meu site
+              </p>
+    
+              <div class="info">
+                <div class="information">
+                  
+                  <p>Benfica, Fortaleza</p>
+                </div>
+                <div class="information">
+                  
+                  <p>pedrolucas300805@gmail.com</p>
+                </div>
+                <div class="information">
+                  
+                  <p>(85) 91234-5678</p>
+                </div>
+              </div>
+    
+              <div class="social-media">
+                <p>Outros meios de contato:</p>
+                <div class="social-icons">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="contact-form">
+              <span class="circle one"></span>
+              <span class="circle two"></span>
+    
+              <form action="/enviar-email" method="post" autocomplete="off">
+
+                <h3 class="title">Contate comigo</h3>
+                <div class="input-container">
+                  <input type="text" name="name" class="input" />
+                  <label for="">Nome</label>
+                  <span>Nome</span>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="email" class="input" />
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" />
+                  <label for="">Telefone</label>
+                  <span>Telefone</span>
+                </div>
+                <div class="input-container textarea">
+                  <textarea name="message" class="input"></textarea>
+                  <label for="">Mensagem</label>
+                  <span>Mensagem</span>
+                </div>
+                <input type="submit" name="submit" value="Enviar" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+    
+        <script src="/app.js"></script>
+    </section>
+
+
+    
+
+
+
+
+
+<!----Footer-->
+
+<section class="footer" rel= "stylesheet" href="style.css">
+    <h4>Sobre Mim</h4>
+    <p>Sou do IFCE curso informática</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>
+        Feito por Pedro Lucas
+    </p>
+</section>
+
+
+
+
+
+<!-- Javascript butão menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
+
