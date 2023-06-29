@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const createError = require('http-errors'); // Mova esta linha para o início do arquivo
+const createError = require('http-errors'); 
 const enviarEmailRouter = require('./routes/enviarEmail');
 
 const indexRouter = require('./routes/index');
