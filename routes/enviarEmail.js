@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     await client.connect();
 
     // Acessar a coleção de contatos
-    const collection = client.db('PedroBD').collection('contatos'); // Substitua 'nomedobanco' pelo nome do seu banco de dados e 'contatos' pelo nome da sua coleção
+    const collection = client.db('PedroBD').collection('contatos'); 
 
     // Criar um novo documento de contato
     const newContact = {
